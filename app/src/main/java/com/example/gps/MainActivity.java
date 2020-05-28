@@ -5,6 +5,7 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -52,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
 
         localizacion();
         registerLocation();
+        Button botonCambiar = (Button) findViewById(R.id.btnChange);
+        botonCambiar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Recicler.class));
+            }
+        });
+
         Button botonDos = (Button) findViewById(R.id.btnSend);
         botonDos.setOnClickListener(new View.OnClickListener() {
 

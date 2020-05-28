@@ -27,4 +27,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
          />
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="100dp"
+        android:text="Ver Registros"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        />
 </LinearLayout>
